@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.main_div{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-top:15rem ;
+    /* font-family: 'Lexend Deca', sans-serif; */
+}
+
+.first_div{
+    background-color: hsl(31, 77%, 52%);
+    padding: 5em;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.second_div{
+    background-color: hsl(184, 100%, 22%);
+    padding: 5em;
+}
+
+.third_div{
+    background-color: hsl(179, 100%, 13%);
+    padding: 5em;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.heading{
+    text-transform: uppercase;
+    color: whitesmoke;
+    margin-top: 3.5rem;
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+
+.paragraph{
+    line-height: 1.5;
+    width: 25rem;
+    font-size: 2rem;
+    margin-top: 2.5rem;
+    color: white;
+}
+
+.btn{
+    border-radius: 25px;
+    background-color: hsl(0, 0%, 95%);
+    padding: 1.5rem;
+    width: 15rem;
+    outline: none;
+    text-transform: capitalize;
+    /* font-weight: bold; */
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 10rem;
+}
+
+#btn_one{
+    color: hsl(31, 77%, 52%);
+    border: 1px solid hsl(31, 77%, 52%);
+}
+
+#btn_one:hover{
+    background-color: hsl(31, 77%, 52%) ;
+    color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+}
+
+#btn_two{
+    color: hsl(184, 100%, 22%);
+    border: 1px solid hsl(184, 100%, 22%);
+
+}
+
+#btn_two:hover{
+    background-color: hsl(184, 100%, 22%) ;
+    color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+}
+
+#btn_three{
+    color: hsl(179, 100%, 13%);
+    border: 1px solid hsl(179, 100%, 13%);
+
+}
+
+#btn_three:hover{
+    background-color: hsl(179, 100%, 13%) ;
+    color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+}
+
+/* responsive code */
+
+@media only screen and (max-width:699.5px){
+    .main_div{
+        flex-wrap: wrap;
+        margin-top: 0rem;
+        align-items: unset;
+        justify-content: unset;
+    }
+
+    .first_div{
+        border-top-right-radius: 2rem;
+        border-bottom-left-radius: 0rem ;
+    }
+
+    .third_div{
+        border-bottom-left-radius: 2rem;
+        border-top-right-radius: 0rem;
+    }
+}
